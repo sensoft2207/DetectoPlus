@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.skyfishjy.library.RippleBackground
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/content"
+                        app:rb_color="#0D70B2"
+                        app:rb_radius="32dp"
+                        app:rb_rippleAmount="6"
+                        app:rb_duration="3000"
+                        app:rb_scale="6"
+                        android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logo"/>
+
+                    <com.senindia.detectoo.font.MyTextviewLight
+                        android:id="@+id/tv_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="Detecto++"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                    </com.skyfishjy.library.RippleBackground>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <com.senindia.detectoo.font.MyButtonBlack
+                    android:id="@+id/btn_allow_permission"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#0D70B2"
+                    android:text="Allow Device Admin Permission"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:elevation="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

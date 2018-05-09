@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_set_back"
+    android:background="@drawable/setting_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:padding="13dp"
+                    android:tint="@color/parts_main"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:paddingLeft="10dp">
+
+                <com.senindia.detectoo.font.MyTextviewLight
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Settings"
+                    android:gravity="center|left"
+                    android:textColor="@color/parts_main"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_pin_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+                    android:padding="10dp"
+                    android:tint="@color/parts_main"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_change_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"
+                    android:padding="10dp"
+                    android:tint="@color/parts_main"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/update"
+                    android:padding="10dp"
+                    android:tint="@color/parts_main"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.senindia.detectoo.font.MyTextviewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Enable Device Pickup Siren"
+                            android:gravity="center|left"
+                            android:textColor="@color/parts_main"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.github.angads25.toggle.LabeledSwitch
+                            android:id="@+id/tg_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:on="true"
+                            app:textOn="Enable"
+                            app:textOff="Disable"
+                            app:colorBorder="#0D70B2"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.senindia.detectoo.font.MyTextviewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="To Secure your device from Unknown pickup"
+                        android:gravity="center|left"
+                        android:textColor="@color/parts_main"
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/parts_main"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.senindia.detectoo.font.MyTextviewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Enable PIN/PATTERN Siren"
+                            android:gravity="center|left"
+                            android:textColor="@color/parts_main"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.github.angads25.toggle.LabeledSwitch
+                            android:id="@+id/tg_aunthentication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:on="true"
+                            app:textOn="Enable"
+                            app:textOff="Disable"
+                            app:colorBorder="#0D70B2"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.senindia.detectoo.font.MyTextviewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="To Secure your device from wrong aunthentication"
+                        android:gravity="center|left"
+                        android:textColor="@color/parts_main"
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/parts_main"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.senindia.detectoo.font.MyTextviewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Enable Charger Unplug Siren"
+                            android:gravity="center|left"
+                            android:textColor="@color/parts_main"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.github.angads25.toggle.LabeledSwitch
+                            android:id="@+id/tg_charger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:on="true"
+                            app:textOn="Enable"
+                            app:textOff="Disable"
+                            app:colorBorder="#0D70B2"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.senindia.detectoo.font.MyTextviewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="To Secure your device with safe charging option"
+                        android:gravity="center|left"
+                        android:textColor="@color/parts_main"
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/parts_main"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.senindia.detectoo.font.MyTextviewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Allow Siren"
+                            android:gravity="center|left"
+                            android:textColor="@color/parts_main"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.github.angads25.toggle.LabeledSwitch
+                            android:id="@+id/tg_siren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:on="true"
+                            app:textOn="Allow"
+                            app:textOff="Stop"
+                            app:colorBorder="#0D70B2"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/parts_main"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.senindia.detectoo.font.MyTextviewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Allow Vibration"
+                            android:gravity="center|left"
+                            android:textColor="@color/parts_main"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.github.angads25.toggle.LabeledSwitch
+                            android:id="@+id/tg_vibration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:on="true"
+                            app:textOn="Allow"
+                            app:textOff="Stop"
+                            app:colorBorder="#0D70B2"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/parts_main"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
